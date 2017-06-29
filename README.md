@@ -30,12 +30,12 @@ SET hive.exec.dynamic.partition = true;
 SET hive.exec.dynamic.partition.mode = nonstrict;
 
 <b> // we are partitioning based on age</b>
-INSERT OVERWRITE TABLE studentpart PARTITION(age) SELECT id,firstname,lastname,phone, <br> loc,age from studdetails1;/pre>
+INSERT OVERWRITE TABLE studentpart PARTITION(age) SELECT id,firstname,lastname,phone, <br> loc,age from studdetails1;
 
 <b>// Check your partitions</b>
 show partitions studentpart;
 <b>// view data based on partitions</b>
-select * from studentpart where age='21';</pre>
+select * from studentpart where age='21'; </pre>
 
 # Loading Data to Pig and converting to JSON
 <pre>
