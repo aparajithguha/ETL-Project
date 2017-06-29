@@ -17,7 +17,7 @@ insert into studdetails values(006,"Archana","Mishra",23,9848022335,"Chennai");
 insert into studdetails values(007,"Komal","Nayak",24,9848022334,"trivendram");
 insert into studdetails values(008,"Bharathi","Nambiayar",24,9848022333,"Chennai");</pre>
 
-#Use sqoop to ingest the data and import to Hive
+# Use sqoop to ingest the data and import to Hive
 <pre>
 sqoop import --connect  jdbc:mysql://localhost/appu1 --driver com.mysql.jdbc.Driver --username user <br> --password 12345 --table studdetails --hive-import -m 1 --hive-table appu.studdetails1 </pre>
 
