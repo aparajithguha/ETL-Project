@@ -1,4 +1,4 @@
-# ETLproject
+# ETL Project
 
 A simple ETL project interlinking the various components of Hadoop Ecosystem
 
