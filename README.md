@@ -56,3 +56,13 @@ val session = SparkSession.builder().appName("test").master("local").getOrCreate
 val df = session.read.json("part-m-000000")
 
 df.show() </pre>
+
+# import the same data to MongoDB
+<pre>
+//create a database and a collection
+use student
+db.createCollection('studentdetails')
+//now exit the mongo shell
+//now use mongo import
+mongoimport -d student -c studentdetails part-m-000000
+</pre>
