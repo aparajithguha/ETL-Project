@@ -57,12 +57,12 @@ val df = session.read.json("part-m-000000")
 
 df.show() </pre>
 
-# import the same data to MongoDB
+# Import the same data to MongoDB
 <pre>
-//create a database and a collection
+<b>//create a database and a collection</b>
 use student
 db.createCollection('studentdetails')
-//now exit the mongo shell
-//now use mongo import
+<b>//now exit the mongo shell</b>
+<b>//now use mongo import</b>
 mongoimport -d student -c studentdetails part-m-000000
 </pre>
